@@ -1,0 +1,19 @@
+name: Create hotfix branches
+on:
+  # To manually trigger
+  workflow_dispatch:
+    inputs:
+      release-tag:
+        description: 'Git tag for which you have to create the hotfix, eg 2.3.0, edge-root-2.3.0 or 2022.11'
+        required: true
+
+jobs:
+  create-hotfix-branch:
+    permissions: write-all
+    uses: backbase-common/workflows/.github/workflows/be-java-maven-create-release-branches.yml@backend
+    with:
+      release-tag: ${{ inputs.release-tag }}
+    secrets:
+      github-token: ${{ secrets.GITHUB_TOKEN }}
+      maven-username: ${{ secrets.DEPLOY_USR }}
+      maven-password: ${{ secrets.DEPLOY_PWD }}

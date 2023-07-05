@@ -1,0 +1,10 @@
+{
+  "name": "Backbase Backend Maven Service Release Workflow",
+  "description": "Backbase Backend Maven Service Release Workflow.",
+  "iconName": "backbase",
+  "categories": [
+    "Automation",
+    "Java",
+    "Maven POM"
+  ]
+}

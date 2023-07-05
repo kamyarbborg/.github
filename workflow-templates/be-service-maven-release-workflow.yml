@@ -1,0 +1,26 @@
+name: Release workflow
+
+on:
+  workflow_dispatch:
+  release:
+    types:
+      - published
+      # Not prerelease or release individually. 
+      # Moving from pre-release to release by unchecking the pre-release checkbox is difficulat to change the git tag
+
+jobs:
+  release:
+    uses: backbase-common/workflows/.github/workflows/be-java-maven-release.yml@feature/cont-1494
+    with:
+      is-dev: false
+      is-beta: true
+      component-name: be-workflows-sample-service
+      release-docker-image: true
+      release-artifacts: true
+      release-db-docs: true
+    secrets:
+      maven-username: ${{ secrets.REPO_DEPLOY_USR }}
+      maven-password: ${{ secrets.REPO_DEPLOY_PWD }}
+      github-token: ${{ secrets.GITHUB_TOKEN }}
+      aws-access-key-id: ${{ secrets.DB_DOCS_KEY_ID }}
+      aws-secret-access-key: ${{ secrets.DB_DOCS_ACCESS_KEY }}

@@ -1,0 +1,21 @@
+name: Branch merged workflow
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+      - release/*
+
+jobs:
+  pr-merged:
+    uses: backbase-common/workflows/.github/workflows/be-java-maven-build.yml@feature/cont-1494
+    with:
+      is-dev: false
+      is-beta: true
+      is-pr: false
+      release-docker-image: true
+      release-artifacts: true
+    secrets:
+      maven-username: ${{ secrets.REPO_DEPLOY_USR }}
+      maven-password: ${{ secrets.REPO_DEPLOY_PWD }}

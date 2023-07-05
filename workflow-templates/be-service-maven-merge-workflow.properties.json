@@ -1,0 +1,10 @@
+{
+  "name": "Backbase Backend Maven Service Merge Branch",
+  "description": "Backbase Backend Maven Service Merge Workflow.",
+  "iconName": "backbase",
+  "categories": [
+    "Automation",
+    "Java",
+    "Maven POM"
+  ]
+}

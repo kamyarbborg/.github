@@ -1,7 +1,7 @@
 {
   "name": "Backbase Backend Service Maven PR",
   "description": "Backbase Backend Service Maven PR Starter Workflow.",
-  "iconName": "icons/backbase.svg",
+  "iconName": "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz48c3ZnIGlkPSJMYXllcl8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1Mi41NiA2My4zNyI+PHBvbHlnb24gcG9pbnRzPSI5LjQ5IDE4Ljk4IDE4Ljk4IDE4Ljk4IDE4Ljk4IDkuNDkgMTguOTggMCA5LjQ5IDAgMCAwIDAgOS40OSA5LjQ5IDkuNDkgOS40OSAxOC45OCIvPjxwYXRoIGQ9Ik0zOC45OCwzMC45MXYtMS40OWM5LjMtMS4zLDExLjcyLTcuNDUsMTEuNzItMTMuNUM1MC43LDguNDMsNDUuNTgsLjMzLDMyLjkxLC4wM2gtNy42MVY5LjQ5aDcuNjFjNi42OSwuMTEsOC4xMSw0LjQ1LDgsNy44Ny0uMjMsNy42Ni0zLjY3LDcuODgtOS41OSw4LjA1SDkuNDlWNjMuMzdoMjIuNjljMTUuMjYsMCwyMC4zOC04LjY1LDIwLjM4LTE3LjY4LDAtNy43Mi0yLjctMTMuMzktMTMuNTgtMTQuNzlabS02LjUyLDIyLjloLTEzLjMxdi0xOS4xN2gxMy4zMWM4LjA0LDAsMTAuNjMsMS41MiwxMC42Myw5Ljc0LDAsNi45MS0yLjU5LDkuNDItMTAuNjMsOS40MloiLz48L3N2Zz4=",
   "categories": [
     "Automation",
     "Java",

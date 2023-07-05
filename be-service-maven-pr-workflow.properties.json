@@ -1,0 +1,11 @@
+{
+  "name": "Backbase Backend Service Maven PR",
+  "description": "Backbase Backend Service Maven PR Starter Workflow.",
+  "iconName": "octicon tools",
+  "categories": [
+    "Automation",
+    "Java",
+    "Maven POM"
+  ],
+  "labels": [ "preview" ]
+}

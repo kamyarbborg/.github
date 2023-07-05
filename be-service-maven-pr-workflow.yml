@@ -1,0 +1,25 @@
+name: PR workflow
+
+on:
+  workflow_dispatch:
+  pull_request:
+    branches:
+      - main
+      - release/*
+    types:
+      - opened
+      - synchronize
+
+jobs:
+  pr-build:
+    uses: backbase-common/workflows/.github/workflows/be-java-maven-build.yml@feature/cont-1494
+    with:
+      component-name: be-workflows-sample-service
+      is-pr: true
+      is-dev: false
+      is-beta: true
+      release-docker-image: true
+      release-artifacts: false
+    secrets:
+      maven-username: ${{ secrets.REPO_DEPLOY_USR }}
+      maven-password: ${{ secrets.REPO_DEPLOY_PWD }}

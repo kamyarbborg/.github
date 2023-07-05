@@ -1,6 +1,6 @@
 {
-  "name": "Backbase Backend Service Maven PR",
-  "description": "Backbase Backend Service Maven PR Starter Workflow.",
+  "name": "Backbase Backend Maven Service PR",
+  "description": "Backbase Backend Maven Service Pull Request Workflow.",
   "iconName": "backbase",
   "categories": [
     "Automation",
